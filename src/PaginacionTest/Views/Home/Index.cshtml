@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h2>Comparación de Paginación</h2>
+
+<p>Selecciona una opción de paginación para realizar las pruebas:</p>
+
+<div>
+    <a href="@Url.Action("PaginacionBasica")" class="btn btn-primary">Paginación Básica (Carga Total)</a>
+    <a href="@Url.Action("PaginacionOptimizada")" class="btn btn-secondary">Paginación Optimizada (Entity Framework)</a>
+    <a href="@Url.Action("PaginacionSqlDirecta")" class="btn btn-success">Paginación con SQL Directo</a>
+</div>
+
